@@ -57,7 +57,7 @@ Other names may be trademarks of their respective owners.
     <description>
             Set this flag to true if you want the JavaServer Faces
             Reference Implementation to validate the XML in your
-            faces-config.xml resources against the DTD. Default
+            faces-config.xml picketlink against the DTD. Default
             value is false.
         </description>
     <param-name>com.sun.faces.validateXml</param-name>
@@ -74,4 +74,9 @@ Other names may be trademarks of their respective owners.
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  <!-- Redirect any 500 Error Code to /error.jsf -->
+  <error-page>
+     <error-code>500</error-code>
+     <location>/error.jsf</location>
+  </error-page>
 </web-app>
